@@ -76,7 +76,7 @@ text-decoration: none;
 /* HERO */
 .hero {
 height: 100vh;
-background: url('/images_mahal/mahalimg5.png') center/cover no-repeat;
+background: url('mahalimg5.png') center/cover no-repeat;
 
   font-family: 'Playfair Display', serif;
 
@@ -152,7 +152,7 @@ text-decoration: none;
 
 .section1 {
   height: 100vh;
-  background: url('/images_mahal/mahalimg1.jpeg') center/cover no-repeat;
+  background: url('mahalimg1.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +160,7 @@ text-decoration: none;
   
   .section2 {
   height: 100vh;
-  background: url('/images_mahal/mahalimg2.jpeg') center/cover no-repeat;
+  background: url('mahalimg2.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +168,7 @@ text-decoration: none;
   
   .section3 {
   height: 100vh;
-  background: url('/images_mahal/mahalimg7.png') center/cover no-repeat;
+  background: url('mahalimg7.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +237,7 @@ width: 45px;
 /* ABOUT HERO */
 .about-hero {
   height: 60vh;
-  background: url('images_mahal/mahalimg20.JPG') center/cover no-repeat;
+  background: url('mahalimg20.JPG') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,7 +289,7 @@ width: 45px;
 /* SERVICES HERO */
 .services-hero {
   height: 50vh;
-  background: url('images_mahal/mahalimg14.JPG') center/cover no-repeat;
+  background: url('mahalimg14.JPG') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +336,7 @@ width: 45px;
 /* GALLERY HERO */
 .gallery-hero {
   height: 50vh;
-  background: url('images_mahal/mahalimg21.JPG') center/cover no-repeat;
+  background: url('mahalimg21.JPG') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

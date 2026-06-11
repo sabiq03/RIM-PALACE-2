@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ‘Poppins’, sans-serif;
+  }
+
+
+body {
+background: #111;
+color: white;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* HEADER */
+header {
+text-align: center;
+padding: 15px;
+background: rgb(31, 58, 90);
+}
+
+header h1 {
+color: rgb(255, 255, 255);
+}
+
+nav {
+margin-top: 10px;
+}
+
+nav a {
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+
+/* HERO */
+.hero {
+height: 100vh;
+background: url('/images_mahal/mahalimg5.png') center/cover no-repeat;
+
+  font-family: 'Playfair Display', serif;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative;
+}
+
+.hero::after {
+content: “”;
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+}
+
+.btn {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 20px;
+background: gold;
+color: black;
+text-decoration: none;
+}
+
+/* SECTIONS */
+
+
+.section {
+  position: relative;
+  height: 100vh; /* 🔥 CHANGE THIS (important) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  }
+  
+  /* BACKGROUND IMAGE */
+  .section::before {
+  content: “”;
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  }
+  
+  /* OVERLAY */
+  .section::after {
+  content: “”;
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  }
+  
+  /* TEXT ABOVE */
+  .content {
+  position: relative;
+  z-index: 2;
+  }
+
+
+
+
+
+.section1 {
+  height: 100vh;
+  background: url('/images_mahal/mahalimg1.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .section2 {
+  height: 100vh;
+  background: url('/images_mahal/mahalimg2.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .section3 {
+  height: 100vh;
+  background: url('/images_mahal/mahalimg7.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+/* FOOTER */
+footer {
+background: rgb(31, 58, 90);
+text-align: center;
+padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+position: fixed;
+bottom: 20px;
+right: 20px;
+}
+
+.whatsapp img {
+width: 55px;
+}
+
+.chat {
+position: fixed;
+bottom: 30px;
+right: 85px;
+background: white;
+color: black;
+padding: 8px 14px;
+border-radius: 20px;
+border: 2px solid #25D366;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+nav a {
+display: block;
+margin: 5px 0;
+}
+
+.hero {
+height: 70vh;
+}
+
+.section {
+min-height: 60vh;
+}
+
+.chat {
+font-size: 12px;
+right: 70px;
+}
+
+.whatsapp img {
+width: 45px;
+}
+}
+  
+
+/* About>html */
+
+
+
+/* ABOUT HERO */
+.about-hero {
+  height: 60vh;
+  background: url('images_mahal/mahalimg20.JPG') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.feature-box {
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  background: rgb(31, 58, 90);
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* SERVIVE    PAHE
+ */
+
+
+
+
+/* SERVICES HERO */
+.services-hero {
+  height: 50vh;
+  background: url('images_mahal/mahalimg14.JPG') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+/* SERVICES GRID */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.service-box {
+  width: 280px;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .service-box {
+    width: 90%;
+  }
+}
+
+
+
+/* galery pages */
+
+
+
+/* GALLERY HERO */
+.gallery-hero {
+  height: 50vh;
+  background: url('images_mahal/mahalimg21.JPG') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+/* GALLERY GRID */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.popup span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* for white background     */
+
+
+.social-icons {
+  margin-top: 15px;
+  }
+  
+  /* ICON STYLE */
+  .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  
+  width: 50px;      /* 🔥 size of circle */
+  height: 50px;
+  
+  background: white;  /* ✅ white background /
+  color: black;       / icon color */
+  
+  font-size: 22px;    /* 🔥 icon size /
+  border-radius: 50%; / circle */
+  
+  text-decoration: none;
+  transition: 0.3s ease;
+  }
+  
+  /* HOVER EFFECT */
+  .social-icons a:hover {
+  transform: scale(1.1);
+  }
+  
+  /* BRAND COLORS ON HOVER  */
+  .social-icons a:nth-child(1):hover {
+  background: #1877f2; 
+  color :white;
+}
+  
+  .social-icons a:nth-child(2):hover {
+  background: #e4405f; /* Instagram */
+  color: white;
+  }
+  
+  .social-icons a:nth-child(3):hover {
+  background: #34a853; /* Maps */
+  color: white;
+  }
+
+/* for static home about pages */
+
+/* DEFAULT HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(31, 58, 90);
+  z-index: 1000;
+  text-align: center;
+  padding: 15px;
+  }
+  
+  /* NAV DESKTOP */
+  nav {
+  margin-top: 10px;
+  }
+  
+  nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  }
+  
+  /* 🔥 MOBILE FIX */
+  @media (max-width: 768px) {
+  
+  header {
+  padding: 10px;
+  }
+  
+  header h1 {
+  font-size: 20px; /* smaller title */
+  }
+  
+  nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  }
+  
+  nav a {
+  font-size: 14px;
+  }
+  
+  }
+  
+
+  .hero {
+    margin-top: 60px; /* adjust based on header */
+  }
+  
+
+  body {
+    padding-top: 10px;
+  }
